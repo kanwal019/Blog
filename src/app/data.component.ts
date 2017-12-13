@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 })
 export class DataComponent {
   mainData: string;
- 
+  articles = ['One','Two','Three','Four','Five'];
+
   loadMainData(sectionName){
     this.mainData='This is '+sectionName+' page.';
   }
