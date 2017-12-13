@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AppComponent } from './app.component';
+import { ARTICLES } from './mocks/article.mock';
+import { Article } from './article';
 
 @Component({
   selector: 'main',
@@ -8,8 +10,11 @@ import { AppComponent } from './app.component';
 })
 export class DataComponent {
   mainData: string;
-  articles = ['One','Two','Three','Four','Five'];
+  articles : Article[];
 
+  ngOnInit(){
+    this.articles=ARTICLES;
+  }
   loadMainData(sectionName){
     this.mainData='This is '+sectionName+' page.';
   }
