@@ -1,0 +1,46 @@
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 80vw;
+    border-bottom: 1px solid #07b;
+    color:#07b;
+    font-size: 18px;
+    z-index: 10;
+}
+
+header section{
+    position: relative;
+    float: left;
+    height: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+header section.selected{border-bottom: 3px solid #0cb;}
+header section:hover{color: #0cb;}
+header section:active{opacity: 0.7;}
+
+footer{
+
+}
+
+main{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+section.sidebar{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height:100vh;
+    width:20vw;
+    background-color: #fefefe;
+    box-shadow: 0px 0px 4px #666;
+    z-index: 15;
+}

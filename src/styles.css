@@ -1,0 +1,224 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family:"Segoe UI Semibold", Segoe; 
+}
+
+input, select{font-family:"Segoe UI", Segoe;}
+input:focus, select:focus, textarea:focus, button:focus{outline:none;}
+
+input[type = "button"], button, input[type = "submit"]
+{
+    height: 30px;
+    min-width: 90px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 18px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #3D9701;
+    text-transform:uppercase;
+    font-family:"Segoe UI Semibold",Segoe;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 3;
+    border: 0;
+}
+
+input[type = "button"].reset, button.reset, input[type = "reset"]
+{
+    background-color:#fff;
+    color:#222;
+    border:1px solid #aaa;
+}
+
+input[type = "button"]:active, button:active, input[type = "submit"]:active, input[type = "reset"]:active {opacity: 0.75;}
+input[type = "button"]:focus, button:focus, input[type = "submit"]:focus, input[type = "reset"]:focus {outline: none;}
+
+input[type = "button"]:hover ,button:hover, input[type = "submit"]:hover, input[type = "reset"]:hover 
+{
+    outline: none;
+    box-shadow: 1px 1px 1px #aaa;
+    border-radius: 2px;
+}
+
+input[type = "text"], input[type = "email"], input[type = "number"]
+{
+    height: 25px;
+    z-index: 3;
+    width: 210px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type='radio'] 
+{
+    -webkit-appearance:none;
+    width:15px;
+    height:15px;
+    border:1px solid #D4D4D4;
+    border-radius:50%;
+    outline:none;
+}
+
+input[type='radio']:hover {box-shadow:0 0 1px 0px #ddd inset;}
+
+input[type='radio']:before 
+{
+    content:'';
+    display:block;
+    width:5px;
+    height:5px;   
+    border-radius:15px;
+    margin:4px;    
+}
+
+input[type='radio']:checked:before {background: #297F9A;}
+
+textarea
+{
+    min-height:50px;
+    min-width: 210px;
+    max-width:350px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+select
+{
+    height: 30px;
+    color: #888;
+    width: 220px;
+    border-color: #D4D4D4;
+    margin-bottom:5px;
+}
+
+meter 
+{
+	width: 400px;
+    height: 10px;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+meter::-webkit-meter-bar
+{
+	background:none;
+	background-color: whiteSmoke;
+	box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+meter::-webkit-meter-optimum-value
+{
+	background:none;
+	background-size:100% 100%;
+	box-shadow: 0 5px 5px -5px #999 inset;
+	background-color:rgb(120, 196, 0);
+}
+
+meter::-webkit-meter-suboptimum-value
+{
+	background:none;
+	background-size:100% 100%;
+	box-shadow: 0 5px 5px -5px #999 inset;
+	background-color:#00ACCE;
+}
+
+meter::-webkit-meter-even-less-good-value
+{
+	background:none;
+	background-size:100% 100%;
+	box-shadow: 0 5px 5px -5px #999 inset;
+	background-color:rgb(237, 27, 36);
+}
+
+::-webkit-scrollbar{width: 5px;}
+:hover::-webkit-scrollbar{width: 5px;}
+::-webkit-scrollbar-track {-webkit-box-shadow: none; border-radius: 0px;}
+::-webkit-scrollbar-thumb {border-radius: 0px; background-color: #ccc; -webkit-box-shadow: none;}
+::-webkit-scrollbar-thumb:window-inactive {background: #aaa;}
+
+option::-webkit-scrollbar{width: 5px;}
+option:hover::-webkit-scrollbar{width: 5px;}
+option::-webkit-scrollbar-track {-webkit-box-shadow: none; border-radius: 0px;}
+option::-webkit-scrollbar-thumb {border-radius: 0px; background-color: #ccc; -webkit-box-shadow: none;}
+option::-webkit-scrollbar-thumb:window-inactive {background: #aaa;}
+
+.message
+{
+	color:#444;
+	font-size:15px;
+	border-radius:0px;
+	padding-left: 3px;
+    height:21px;
+    padding-top: 20px;
+    color: rgb(113, 118, 125);
+}
+
+.message.amber
+{
+	border:1.5px solid rgba(255,159,64,1);
+	background-color:rgba(255,159,64,0.3);
+}
+
+.message.red
+{
+	border:1px solid rgba(168,0,0,1);
+	background-color:rgba(168,0,0,0.3);
+}
+
+.message.blue
+{
+	border:1px solid rgba(101,158,199,1);
+	background-color:rgba(101,158,199,0.3);
+}
+
+.message.details
+{
+    border:1px solid #ddd;
+    background:linear-gradient(#f6f6f6,#fff);
+}
+
+.seperator{position: absolute; bottom: 15px; left: 15px; height: 1px; width: calc(100% - 30px); background-color: #07b;}
+.hidden{display:none;}
+
+.meter-meta
+{
+	position:absolute;
+	bottom:10px;
+	font-size:10px;
+	color:#666;
+	padding-left: calc((100% - 290px)/2);
+}
+
+.meter-box
+{
+	position: relative;
+    float: left;
+    height: 12px;
+    width: 12px;
+    margin: 0px 10px 0px 20px;
+}
+
+.meter-box.bad-box{background-color:#ED1B24;}
+.meter-box.average-box{background-color:#00ACCE;}
+.meter-box.good-box{background-color:#78C400;}
+
+.meter-data
+{
+	position:relative;
+	float:left;
+}
+
+select.wide{width:350px;}
+textarea.wide, input.wide{width:340px;}
