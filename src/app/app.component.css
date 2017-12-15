@@ -19,7 +19,7 @@ header section{
 }
 
 header section.selected{border-bottom: 3px solid #0cb;}
-header section:hover{color: #0cb;}
+header section:hover{color: #fa4;}
 header section:active{opacity: 0.7;}
 
 footer{
@@ -32,6 +32,7 @@ main{
     left: 0px;
     overflow: hidden;
     overflow-y: scroll;
+    width: 80vw;
 }
 
 section.sidebar{

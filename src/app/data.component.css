@@ -1,0 +1,64 @@
+.article-box{
+    position: relative;
+    float: left;
+    height: 250px;
+    width: 500px;
+    border: 1px solid #ccc;
+    margin: 20px 0px 0px 20px;
+}
+
+.box-bar{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 5px;
+    height: 100%;
+    background-color: #07b;
+    z-index: 10;
+}
+
+.article-box:nth-child(5n+4) .box-bar{ background-color: #07b; }
+.article-box:nth-child(5n+0) .box-bar{ background-color: #a21 }
+.article-box:nth-child(5n+2) .box-bar{ background-color: #fa4; }
+.article-box:nth-child(5n+3) .box-bar{ background-color: #0cb; }
+.article-box:nth-child(5n+1) .box-bar{ background-color: #f6d; }
+
+.box-content{
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    width: calc(100% - 15px);
+    padding: 5px;
+    height: calc(100% - 10px);
+}
+
+.article-head{
+    font-size: 24px;
+    height: 34px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.article-meta{
+    font-size: 12px;
+    height: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Segoe UI";
+    color:#888;
+}
+
+.article-desc{
+    font-size: 15px;
+    height: calc(100% - 80px);
+    margin-top: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: "Segoe UI";
+    color: #222;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}

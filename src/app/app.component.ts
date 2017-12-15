@@ -8,9 +8,16 @@ import { DataComponent } from './data.component';
 })
 export class AppComponent {
   constructor(){
-    this.navigateTo('Home');
+    this.navigateTo('Home','');
   }
-  navigateTo(sectionName){
+  navigateTo(sectionName,event){    
+    if(event!==''){
+      let tempList = document.getElementsByClassName('selected');
+      if(tempList.length>0){
+        tempList[0].classList.remove('selected');
+      }        
+      event.target.classList.add('selected');
+    }
     DataComponent.prototype.loadMainData(sectionName);
   }
 }

@@ -1,5 +1,11 @@
-<h1>{{mainData}}</h1>
-<div class="article-list" *ngFor="let article of articles">
-    <h2>{{article.name}}</h2>
-    <p>{{article.description}}</p>
+<!--h1>{{mainData}}</h1-->
+<div class="article-list">
+    <div class="article-box" *ngFor="let article of articles">
+        <div class="box-bar"></div>
+        <div class="box-content">
+            <div class="article-head">{{article.name}}</div>
+            <div class="article-meta">{{article.date}}</div>
+            <div class="article-desc">{{article.description}}</div>
+        </div>
+    </div>
 </div>

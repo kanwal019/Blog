@@ -1,7 +1,7 @@
 <div class="main-container">
   <header>
-    <section (click)="navigateTo('Home')">Home</section>
-    <section (click)="navigateTo('About')">About</section>
+    <section class="selected" (click)="navigateTo('Home',$event)">Home</section>
+    <section (click)="navigateTo('About',$event)">About</section>
   </header>
   <section class="sidebar"></section>
   <main></main>
