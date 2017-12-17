@@ -1,11 +1,13 @@
-<!--h1>{{mainData}}</h1-->
-<div class="article-list">
-    <div class="article-box" *ngFor="let article of articles">
-        <div class="box-bar"></div>
-        <div class="box-content">
-            <div class="article-head">{{article.name}}</div>
-            <div class="article-meta">{{article.date}}</div>
-            <div class="article-desc">{{article.description}}</div>
+<div class="main-data">
+    <div class="article-list" *ngIf="sectionName==='Home'">
+        <div class="article-box" *ngFor="let article of articles">
+            <div class="box-bar"></div>
+            <div class="box-content">
+                <div class="article-head">{{article.name}}</div>
+                <div class="article-meta">{{article.date}}</div>
+                <div class="article-desc">{{article.description}}</div>
+            </div>
         </div>
     </div>
+    <h1 *ngIf="sectionName==='About'">This is the About Page</h1>
 </div>

@@ -11,11 +11,12 @@ import { Article } from './article';
 export class DataComponent {
   mainData: string;
   articles : Article[];
+  sectionName: string;
 
   ngOnInit(){
     this.articles=ARTICLES;
   }
   loadMainData(sectionName){
-    this.mainData='This is '+sectionName+' page.';
+    this.sectionName=sectionName;
   }
 }
