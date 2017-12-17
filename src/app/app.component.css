@@ -28,11 +28,12 @@ footer{
 
 main{
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0px;
     overflow: hidden;
     overflow-y: scroll;
-    width: 80vw;
+    width: calc(80vw - 20px);
+    height: calc(100vh - 70px);
 }
 
 section.sidebar{
