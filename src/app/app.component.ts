@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataComponent } from './data.component';
+import { SidebarComponent } from 'app/sidebar.component';
 
 @Component({
   selector: 'app-root',
@@ -19,5 +20,6 @@ export class AppComponent {
       event.target.classList.add('selected');
     }
     DataComponent.prototype.loadMainData(sectionName);
+    SidebarComponent.prototype.loadSideBar(sectionName);
   }
 }

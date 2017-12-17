@@ -5,3 +5,8 @@ export class Article{
     date:string;
     author:string;
 }
+
+export class SideDate{
+    year:string;
+    month:string;
+}

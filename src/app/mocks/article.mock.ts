@@ -1,4 +1,4 @@
-import {Article} from '../article';
+import {Article} from '../models';
 
 export const ARTICLES : Article[]=[{
     "id":1,

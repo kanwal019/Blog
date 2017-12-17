@@ -1,0 +1,75 @@
+import {SideDate} from '../models';
+
+export const SIDEDATES : SideDate[]=[{
+    "year":"2016","month":"January"
+},{
+    "year":"2016","month":"February"
+},{
+    "year":"2016","month":"March"
+},{
+    "year":"2016","month":"April"
+},{
+    "year":"2016","month":"May"
+},{
+    "year":"2016","month":"June"
+},{
+    "year":"2016","month":"July"
+},{
+    "year":"2016","month":"August"
+},{
+    "year":"2016","month":"September"
+},{
+    "year":"2016","month":"October"
+},{
+    "year":"2016","month":"November"
+},{
+    "year":"2016","month":"December"
+},{
+    "year":"2017","month":"January"
+},{
+    "year":"2017","month":"February"
+},{
+    "year":"2017","month":"March"
+},{
+    "year":"2017","month":"April"
+},{
+    "year":"2017","month":"May"
+},{
+    "year":"2017","month":"June"
+},{
+    "year":"2017","month":"July"
+},{
+    "year":"2017","month":"August"
+},{
+    "year":"2017","month":"September"
+},{
+    "year":"2017","month":"October"
+},{
+    "year":"2017","month":"November"
+},{
+    "year":"2017","month":"December"
+},{
+    "year":"2018","month":"January"
+},{
+    "year":"2018","month":"February"
+},{
+    "year":"2018","month":"March"
+},{
+    "year":"2018","month":"April"
+},{
+    "year":"2018","month":"May"
+},{
+    "year":"2018","month":"June"
+},{
+    "year":"2018","month":"July"
+},{
+    "year":"2018","month":"August"
+},{
+    "year":"2018","month":"September"
+},{
+    "year":"2018","month":"October"
+},{
+    "year":"2018","month":"November"
+},{
+    "year":"2018","month":"December"
+}];

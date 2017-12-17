@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ARTICLES } from './mocks/article.mock';
-import { Article } from './article';
+import { Article } from './models';
 
 @Component({
   selector: 'main',

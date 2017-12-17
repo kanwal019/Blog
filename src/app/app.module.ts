@@ -5,10 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DataComponent } from './data.component';
+import { SidebarComponent } from 'app/sidebar.component';
 
 @NgModule({
   declarations: [
-    AppComponent,DataComponent
+    AppComponent,DataComponent,SidebarComponent
   ],
   imports: [
     BrowserModule,

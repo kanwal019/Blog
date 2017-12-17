@@ -30,19 +30,19 @@ main{
     position: absolute;
     top: 70px;
     left: 0px;
-    overflow: hidden;
     overflow-y: scroll;
     width: calc(80vw - 20px);
     height: calc(100vh - 70px);
 }
 
-section.sidebar{
+side-bar.sidebar{
     position: absolute;
     top: 0px;
     right: 0px;
     height:100vh;
     width:20vw;
     background-color: #fefefe;
+    overflow-y: scroll;
     box-shadow: 0px 0px 4px #666;
     z-index: 15;
 }
