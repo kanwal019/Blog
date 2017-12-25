@@ -6,7 +6,7 @@
         <div class="form-group search-unit">
             <label for="search-by-title">Search By Title</label>
             <input type="text" id="search-by-title" placeholder="Blog Title" />
-            <input type="button" id="search-submit" value="Search"/>
+            <input type="button" id="search-submit" value="Search" (click)="searchBlogs()" />
         </div>
     </form>
     <form>
@@ -18,7 +18,7 @@
             <select id="filter-by-year">
                 <option *ngFor="let year of years" value="{{year}}">{{year}}</option>
             </select>
-            <input type="button" id="filter-submit" value="Filter"/>
+            <input type="button" id="filter-submit" value="Filter" (click)="filterBlogs()" />
         </div>
     </form>
 </div>

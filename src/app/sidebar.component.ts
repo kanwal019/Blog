@@ -42,5 +42,29 @@ import { DatePipe } from '@angular/common';
     loadSideBar(sectionName){
       this.sectionName=sectionName;
     }
+    searchBlogs(){
+      let tempTitle= this.elRef.nativeElement.querySelector('#search-by-title').value;
+      let tempBlogList = document.getElementsByClassName('article-head');
+      for(let i=0;i<tempBlogList.length;i++){
+        tempBlogList[i].parentElement.parentElement.classList.remove('hidden');
+        if(!tempBlogList[i].innerHTML.toLowerCase().includes(tempTitle.toLowerCase())){
+          tempBlogList[i].parentElement.parentElement.classList.add('hidden');
+        }
+      }
+    }
+    filterBlogs(){
+      let tempMonth= this.elRef.nativeElement.querySelector('#filter-by-date').value;
+      let tempYear= this.elRef.nativeElement.querySelector('#filter-by-year').value;
+      let tempBlogList= document.getElementsByClassName('article-meta');
+      for(let i=0;i<tempBlogList.length;i++){
+        tempBlogList[i].parentElement.parentElement.classList.remove('hidden');
+        if(!tempBlogList[i].innerHTML.toLowerCase().includes(tempMonth.toLowerCase())){
+          tempBlogList[i].parentElement.parentElement.classList.add('hidden');
+        }
+        if(!tempBlogList[i].innerHTML.includes(tempYear)){
+          tempBlogList[i].parentElement.parentElement.classList.add('hidden');
+        }
+      }
+    }
   }
   
