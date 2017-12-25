@@ -8,6 +8,9 @@ body{
     font-family:"Segoe UI Semibold", Segoe; 
 }
 
+:disabled {cursor: not-allowed;}
+::selection, select option:hover{outline: none; background-color: #0cb; color: #fff;}
+
 input, select{font-family:"Segoe UI", Segoe;}
 input:focus, select:focus, textarea:focus, button:focus{outline:none;}
 

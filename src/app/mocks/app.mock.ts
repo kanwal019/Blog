@@ -73,3 +73,6 @@ export const SIDEDATES : SideDate[]=[{
 },{
     "year":"2018","month":"December"
 }];
+
+export const YEARS : string[]=["2016","2017","2018","2019"];
+export const MONTHS : string[]=["January","February","March","April","May","June","July","August","September","October","November","December"];

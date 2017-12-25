@@ -1,0 +1,22 @@
+input[type = "button"], button, input[type = "submit"]{
+    margin-left:0px; 
+    margin-top: 10px;
+}
+
+input[type = "text"], input[type = "email"], select, input[type = "number"]{
+    margin-top: 5px;
+}
+
+select{
+    margin-bottom: 0px;
+}
+
+label{
+    color: #555;
+    font-family: "Segoe UI";
+    font-size: 12px;
+}
+
+.filter-unit{
+    margin-top: 20px;
+}

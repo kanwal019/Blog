@@ -1,5 +1,24 @@
 <div class="side-bar-home" *ngIf="sectionName==='Home'">
-    <div class="side-date-link" *ngFor="let sidedate of sidedates">
+    <!--div class="side-date-link" *ngFor="let sidedate of sidedates">
         {{sidedate.month}} {{sidedate.year}}
-    </div>
+    </div-->
+    <form>
+        <div class="form-group search-unit">
+            <label for="search-by-title">Search By Title</label>
+            <input type="text" id="search-by-title" placeholder="Blog Title" />
+            <input type="button" id="search-submit" value="Search"/>
+        </div>
+    </form>
+    <form>
+        <div class="form-group filter-unit">
+            <label for="filter-by-date">Filter By Date</label>
+            <select id="filter-by-date">
+                <option *ngFor="let month of months" value="{{month}}">{{month}}</option>
+            </select>
+            <select id="filter-by-year">
+                <option *ngFor="let year of years" value="{{year}}">{{year}}</option>
+            </select>
+            <input type="button" id="filter-submit" value="Filter"/>
+        </div>
+    </form>
 </div>
